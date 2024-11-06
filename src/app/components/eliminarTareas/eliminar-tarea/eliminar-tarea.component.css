@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+
+.header{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.headerL{
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    margin: 2% 0% 5% 5%;
+}
+.headerL button{
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: .7em;
+}
+
+
+.headerR{
+    display: flex;
+    align-items: center;
+    margin: 2% 5% 5% 5%;
+}
+.headerRBuscar{
+    font-size: 120%;
+    margin-right: .4em;
+    position: relative;
+    top: 5px;
+}
+.header input{
+    min-width: 35%;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-self: start; 
+    min-width: 250px;
+    max-width: 20%;
+    margin: 10px 20px 30px 20px;
+}
+.spanLi{
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+    font-size: 110%;
+}
+
+
+
+.button{
+    border: 2px outset black;
+    transition: background-color .3s,
+                color .3s,
+                font-weight .3s;
+}
+
+.button:hover{
+    background-color: rgb(146, 0, 0);
+    color: white;
+    font-weight: bold;
+}

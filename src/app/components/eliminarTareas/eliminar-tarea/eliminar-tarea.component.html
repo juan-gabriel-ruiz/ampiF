@@ -1,0 +1,30 @@
+
+<div class="header">
+
+  <div class="headerL">
+    <h1>Eliminación de Tareas</h1> 
+    <button (click)="cargarTareas()">Actualizar</button>
+  </div>
+   
+
+  <div class="headerR">
+    <p class="headerRBuscar">Buscar:</p>
+     <input type="text" placeholder="Asignado a..." (input)="buscarTarea($event)">
+  </div>
+
+</div>
+   
+
+
+<div class="container" >
+    <div class="card" *ngFor="let tarea of tareas">
+        <ul class="list-group list-group-flush" >
+            <li class="list-group-item"><span class="spanLi">Titulo</span> {{tarea.titulo}}</li>
+            <li class="list-group-item"><span class="spanLi">Descripción</span> {{tarea.descripcion}}</li>
+            <li class="list-group-item"><span class="spanLi">Asignado a</span> {{tarea.asignado}}</li>
+            <li class="list-group-item"><span class="spanLi">Fecha de cierre</span> {{tarea.fecha_fin}}</li>
+            <li class="list-group-item"><span class="spanLi">Estado</span> {{tarea.estado}}</li>
+        </ul>
+        <button class="button" (click)="eliminarTarea(tarea._id)">Eliminar</button>
+    </div>
+</div>
